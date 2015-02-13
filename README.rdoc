@@ -1,28 +1,98 @@
-== README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeIn();
+        $("#div2").fadeIn("slow");
+        $("#div3").fadeIn(3000);
+    });
+});
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  if (window.confirm('Your feelings have been validated.')) {
+      window.location.href='http://www.google.com';
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+      <div id="dialogoverlay"></div>
+      <div id="dialogbox">
+        <div>
+          <div id="dialogboxhead"></div>
+          <div id="dialogboxbody"></div>
+          <div id="dialogboxfoot"></div>
+        </div>
+      </div>
+      <button onclick="alert('You look very pretty today.')">Default Alert</button>
+      <button onclick="Alert.render('Your feelings are not valid.')">Custom Alert</button>
+      <button onclick="Alert.render('And you also smell very nice.')">Custom Alert 2</button>
+
+
+  <form class="form-horizontal">
+    <div class="form-group">
+      <div class="col-md-offset-1 col-md-1">
+      <%= f.label :to %></div>
+      <div class="col-md-4">
+      <%= f.text_field :josh_name, :size => 50 %>
+      </div>
+    </div>
+
+  <br>
+  <br>
+
+
+
+#heart {
+      position: relative;
+      width: 100px;
+      height: 90px;
+    }
+
+    #heart:before, #heart:after {
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: red;
+      border-radius: 50px 50px 0 0;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+     -webkit-transform-origin: 0 100%;
+     -moz-transform-origin: 0 100%;
+     -ms-transform-origin: 0 100%;
+     -o-transform-origin: 0 100%;
+     transform-origin: 0 100%;
+   }
+
+    #heart:after {
+      left: 0;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+     transform: rotate(45deg);
+     -webkit-transform-origin: 100% 100%;
+     -moz-transform-origin: 100% 100%;
+     -ms-transform-origin: 100% 100%;
+     -o-transform-origin: 100% 100%;
+     transform-origin :100% 100%;
+   }
+
+
+
+
+
+
+    div.container4 {
+        height: 45em;
+        position: relative }
+    div.container4 p {
+        margin: 0;
+        background: yellow;
+        font-size: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) }

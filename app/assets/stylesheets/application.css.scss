@@ -1,19 +1,232 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+section.first {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        // border: 1px solid black;
+        width: 450px;
+        height: 100px;
+}
 
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+section.second {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        // border: 1px solid black;
+        width: 450px;
+        height: 100px;
+        display: none;
+}
+
+#heart {
+         position: relative;
+         width: 100px;
+         height: 90px;
+         margin-top: 10px;
+         margin-bottom: -10px;
+         margin-left: auto;
+         margin-right: auto;
+}
+
+#heart:before, #heart:after {
+         position: absolute;
+         content: "";
+         left: 50px;
+         top: 0;
+         width: 50px;
+         height: 80px;
+         background: red;
+         border-radius: 50px 50px 0 0;
+         -webkit-transform: rotate(-45deg);
+         -moz-transform: rotate(-45deg);
+         -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+         transform: rotate(-45deg);
+        -webkit-transform-origin: 0 100%;
+        -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+        -o-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+}
+
+#heart:after {
+         left: 0;
+         -webkit-transform: rotate(45deg);
+         -moz-transform: rotate(45deg);
+         -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transform-origin: 100% 100%;
+        -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        -o-transform-origin: 100% 100%;
+        transform-origin :100% 100%;
+}
+
+.half-circle {
+  position: absolute;
+    width: 14px;
+    height: 7px;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 1px solid black;
+    border-bottom: 0;
+    margin-top: -8.5%;
+    margin-left: 49.5%;
+    -webkit-transform: rotate(-45deg);
+           -moz-transform: rotate(-45deg);
+           -ms-transform: rotate(-45deg);
+           -o-transform: rotate(-45deg);
+           transform: rotate(-45deg);
+          -webkit-transform-origin: 0 100%;
+          -moz-transform-origin: 0 100%;
+          -ms-transform-origin: 0 100%;
+          -o-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+
+#arrow {
+  position: absolute;
+         width: 3px;
+         height: 45px;
+         margin-top: -11%;
+         margin-left: 57%;
+         background: black;
+         -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+               -webkit-transform-origin: 0 100%;
+               -moz-transform-origin: 0 100%;
+               -ms-transform-origin: 0 100%;
+               -o-transform-origin: 0 100%;
+               transform-origin: 0 100%;
+
+}
+
+#arrow-down {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 13px solid #f00;
+  margin-top: -2%;
+  margin-left: 58%;
+  -webkit-transform: rotate(-45deg);
+         -moz-transform: rotate(-45deg);
+         -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+         transform: rotate(-45deg);
+        -webkit-transform-origin: 0 100%;
+        -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+        -o-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+
+}
+
+p.berry {
+  position: absolute;
+  font-family: 'Abril Fatface';
+  font-size: 40px;
+  letter-spacing: 9px;
+  margin-top: 34%;
+  margin-left: 90%;
+}
+
+
+p.sweetest {
+  position: absolute;
+   font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+   margin-top: 2.5%;
+   margin-left: 64%;
+   }
+
+   text.toleave {
+      font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+      }
+
+
+button
+  {
+      display: block;
+      font-size: .8em;
+      padding: 2px 2px;
+      margin: 10px auto;
+      color: black;
+      background-color: white;
+      border: 0 none;
+      border-radius: 3px;
+      box-shadow: 0 1px 0 #666, 0 1px 0 #444, 0 1px 1px rgba(0,0,0,0.6);
+    }
+
+
+
+
+
+    #dialogoverlay{
+      display: none;
+      opacity: .8;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      margin-top: -25%;
+      margin-left: -145%;
+      background: #FFF;
+      height:100%;
+      width: 100%;
+      z-index: 10;
+    }
+    #dialogbox{
+      display: none;
+      position: absolute;
+      margin-top: -25%;
+      margin-left: -145%;
+      background: #000;
+      border-radius:7px;
+      height:185px;
+      width:1050px;
+      z-index: 10;
+    }
+    #dialogbox > div{ background:#FFF; margin:8px; }
+    #dialogbox > div > #dialogboxhead{ background: red; font-size:19px; padding:10px; color:#CCC; }
+    #dialogbox > div > #dialogboxbody{ background:#333; padding:20px; color:#FFF; }
+    #dialogbox > div > #dialogboxfoot{ background: red; padding:10px; text-align:right; }
+
+
+    #dialog2overlay{
+      display: none;
+      opacity: .8;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      margin-top: -25%;
+      margin-left: -145%;
+      background: #FFF;
+      height:100%;
+      width: 100%;
+      z-index: 10;
+    }
+    #dialog2box{
+      display: none;
+      position: absolute;
+      margin-top: -25%;
+      margin-left: -145%;
+      background: #000;
+      border-radius:7px;
+      height:185px;
+      width:1050px;
+      z-index: 10;
+    }
+    #dialog2box > div{ background:#FFF; margin:8px; }
+    #dialog2box > div > #dialog2boxhead{ background: green; font-size:19px; padding:10px; color:#CCC; }
+    #dialog2box > div > #dialog2boxbody{ background:#333; padding:20px; color:#FFF; }
+    #dialog2box > div > #dialog2boxfoot{ background: green; padding:10px; text-align:right; }

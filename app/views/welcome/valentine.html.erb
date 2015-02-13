@@ -1,0 +1,82 @@
+<section class="second">
+  <div id="heart">
+    <p class="berry">&nbsp;berry</p>
+  </div>
+    <div id="arrow">
+    </div>
+      <div id="arrow-down">
+    </div>
+    <div class="half-circle">
+    </div>
+    <p class="sweetest">the sweetest berry of all</p>
+
+
+</section>
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<%= form_for(@valentine, url:"/valentine") do |f| %>
+
+
+
+    <div class="form-group">
+      <div class="col-md-offset-3 col-md-6">
+        <div class="col-md-4">
+        <%= f.text_field :message, :size => 80, :placeholder => "Leave a valentine for Josh" %></div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="form-group">
+        <div class="col-md-offset-3 col-md-6" >
+          <div class="col-md-4">
+          <%= f.text_field :name, :size => 80, :placeholder => "This valentine is from..." %></div>
+        </div>
+
+    <br>
+    <br>
+
+    <div class="form-group">
+      <div class="col-md-offset-8 col-md-1">
+        <button type="submit"><text class="toleave">  <%= f.submit  %></text>
+</button>
+    </div>
+
+
+    </div>
+
+<br>
+
+    <% end %>
+
+</form>
